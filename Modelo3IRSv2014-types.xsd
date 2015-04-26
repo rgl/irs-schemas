@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:simpleType name="Cat_M3V2014_Anos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Anos_AnexoSS">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_RostoTitulares">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- SPA, SPB, D(i), DD(i), DG(i), F -->
+  <xs:simpleType name="Cat_M3V2014_RostoTitularesComDepEFalecidos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- SPA, SPB, SPC, D(i), DD(i), DG(i), F -->
+  <xs:simpleType name="Cat_M3V2014_RostoTitularesComCDepEFalecidos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- SPA, SPB, D(i), DD(i), DG(i), AF(i), AS(i), AC(i), C (Contitulares SPA e SPB), F -->
+  <xs:simpleType name="Cat_M3V2014_RostoTitularesComDepAfiAscSPCEFalecidos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- SPA,SPB,D(i),DD(i),DG(i),AF(i),AS(i),AC(i), F -->
+  <xs:simpleType name="Cat_M3V2014_RostoTitularesComDepAfiAscEFalecidos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- SPA, SPB, D(i), DD(i), DG(i), C (Contitulares SPA e SPB), F -->
+  <xs:simpleType name="Cat_M3V2014_RostoTitularesComDepSPCEFalecidos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Pais_Rosto">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Pais_AnxD">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Pais_AnxG">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Pais_AnxH">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Pais_AnxH_Q04">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Pais_AnxJ">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Pais_AnxL">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Pais_AnxSS">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoAQ4A">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoAQ4BA">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoAQ5">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoBQ4">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoBQ4A">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoDQ4">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoEQ4A">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoEQ4B">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoG1Q5">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoFQ4">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoGQ4">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoGQ4BensMoveisImoveis">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoGQ8">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoGQ8CodEncargos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Beneficios">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_BeneficiosAnexoHQ8">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoHQ4">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoJQ6NLinha">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoJQ4">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoJQ4BCodigos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoJQ7LinhaQ6">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <!-- <xs:simpleType name="Cat_M3V2014_AnexoJQ7AnexoJQ4">
+        <xs:restriction base="xs:long"/>
+    </xs:simpleType>-->
+  <xs:simpleType name="Cat_M3V2014_AnexoLCodRendAnexoA">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoLCampoQ4AnexoB">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoLCampoQ6AnexoJ">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_CodActividade">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_Despesas">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_TipoPredio">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_SimNao">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_PermanenteArrendada">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2014_AnexoLCatAouB">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="RadioSimNao">
+    <xs:restriction base="xs:boolean"/>
+  </xs:simpleType>
+  <xs:simpleType name="RadioSN">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="Sim" value="S"/>
+      <xs:enumeration id="Nao" value="N"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioNaturezaDaDeclaracao">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP1" value="1"/>
+      <xs:enumeration id="OP2" value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioNaturezaDaDeclaracaoPrazo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioAreaResidencia">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+      <xs:enumeration value="3"/>
+      <xs:enumeration value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioTributacaoRegime">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP6" value="6"/>
+      <xs:enumeration id="OP7" value="7"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioOpcaoTaxasRegras">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP8" value="8"/>
+      <xs:enumeration id="OP9" value="9"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioRegimeTributacaoConjunta">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP10" value="10"/>
+      <xs:enumeration id="OP11" value="11"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioEstadoCivil">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+      <xs:enumeration value="3"/>
+      <xs:enumeration value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioEntidadesBeneficiariasIRS">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioRegimeIsolado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioLocalReinvestimento">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioHerancaIndivisa">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioEstabelecimentoEstavel_AnexoB">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP13" value="13"/>
+      <xs:enumeration id="OP14" value="14"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioAnexoB4C1">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioAnexoB4C2">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="3"/>
+      <xs:enumeration value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioAlienacaoImoveis">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioCessouActividade">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioEstabelecimentoEstavel_AnexoC">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="11"/>
+      <xs:enumeration value="12"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioEnglobamento_AnexoE">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioEnglobamento_AnexoG">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioTributacaoRendimentosElevadoValorAcrescentado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1"/>
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioTributacaoRendimentosObtidosEstrangeiro">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="3"/>
+      <xs:enumeration value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Decimal_15">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="15"/>
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Decimal_9">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="9"/>
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Decimal_12">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="12"/>
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Decimal_13">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="13"/>
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Decimal_14">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="14"/>
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="NIFType">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+</xs:schema>
