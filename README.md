@@ -8,7 +8,7 @@ Estes schemas foram obtidos no [Portal das Finanças](https://www.portaldasfinan
 
 Nomeadamente em [Suporte Informático - Formato de ficheiros](http://www.portaldasfinancas.gov.pt/de/ajuda/DGCI/FAQSI.htm).
 
-**NB** Os ficheiros foram renomeados para refletir os seu ano (e.g. `Modelo3IRS.xsd` para `Modelo3IRSv2015.xsd`). 
+**NB** Os ficheiros foram renomeados para refletir o seu ano (e.g. de `Modelo3IRS.xsd` para `Modelo3IRSv2016.xsd`). 
 
 **NB** Os ficheiros sofreram uma pequena alteração de formatação através do [xmllint](http://linux.die.net/man/1/xmllint), e.g.: 
 

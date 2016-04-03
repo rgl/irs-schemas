@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:simpleType name="Cat_M3V2016_Anos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="NIFType">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_CodigoAtividade">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_SimNao">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="RadioEstadoCivil">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP1" value="1"/>
+      <xs:enumeration id="OP2" value="2"/>
+      <xs:enumeration id="OP3" value="3"/>
+      <xs:enumeration id="OP4" value="4"/>
+      <xs:enumeration id="OP5" value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioSN">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="Sim" value="S"/>
+      <xs:enumeration id="Nao" value="N"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioAreaResidenciaResidente">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP12" value="1"/>
+      <xs:enumeration id="OP13" value="2"/>
+      <xs:enumeration id="OP14" value="3"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioAreaResidenciaNaoResidente">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP15" value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_RostoPaisUE">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="RadioTributacaoRegime">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP7" value="7"/>
+      <xs:enumeration id="OP8" value="8"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioOpcaoTaxasRegras">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP9" value="9"/>
+      <xs:enumeration id="OP10" value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioModalidadePagamento">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP16" value="1"/>
+      <xs:enumeration id="OP17" value="2"/>
+      <xs:enumeration id="OP18" value="3"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Unsigned_Decimal_12">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="12"/>
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Unsigned_Decimal_13">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="13"/>
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- 13(S) -->
+  <xs:simpleType name="Signed_Decimal_12">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="12"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Unsigned_Decimal_14">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="14"/>
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- 14(S) -->
+  <xs:simpleType name="Signed_Decimal_13">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="13"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Unsigned_Decimal_15">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="15"/>
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- 15(S) -->
+  <xs:simpleType name="Signed_Decimal_14">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="14"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- 16(S) -->
+  <xs:simpleType name="Signed_Decimal_15">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:totalDigits value="15"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_RostoPaises">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_RostoPaisesNaoUE">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="RadioNaturezaDaDeclaracao">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP19" value="1"/>
+      <xs:enumeration id="OP20" value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioNaturezaDaDeclaracaoPrazo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP21" value="1"/>
+      <xs:enumeration id="OP22" value="2"/>
+      <xs:enumeration id="OP23" value="3"/>
+      <xs:enumeration id="OP24" value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioEntidadesBeneficiariasIRS">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP25" value="1"/>
+      <xs:enumeration id="OP26" value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- SPA,SPB,F,D(i),AF(i),DG(i) -->
+  <xs:simpleType name="Cat_M3V2016_RostoTitularesFDependentes">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- SPA,SPB,C(Q6A.C01),F,D(i),AF(i),DG(i) -->
+  <xs:simpleType name="Cat_M3V2016_RostoTitularesCFDependentes">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3v2016_RostoTitulares">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- anexo A -->
+  <xs:simpleType name="Cat_M3V2016_AnexoARendimentos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoAQ4CDespesas">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoAQ5Rendimentos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_ProfissaoCodigo">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <!-- anexo B -->
+  <xs:simpleType name="Cat_M3V2016_AnexoBRendimentos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoBQ4ARendimentos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <!-- anexo H -->
+  <xs:simpleType name="Cat_M3V2016_AnexoHQ4Rendimentos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoHQ6BBeneficios">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoHQ6CDespesaEncargo">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoHQ7Encargos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_TipoPredio">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- anexo J -->
+  <xs:simpleType name="Cat_M3V2016_AnexoJPaises">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJQ4Rendimentos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJq04AT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJq05AT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJQ5Rendimentos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJq06AT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJQ6Rendimentos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJq07AT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJQ7Rendimentos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJq08AT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJQ8Rendimentos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJq091AT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJQ91BRendimentos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJq091BT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJq092AT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJQ92ACodigoAlienacao">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJQ92BRendimentos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJq092BT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoJQ10Quadros">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- anexo L -->
+  <xs:simpleType name="Cat_M3V2016_AnexoLQ4Rendimentos">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoLQ05Quadros">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoLQ05CatAouB">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="RadioTributacaoAutonomaOuEnglobamentoA">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP27" value="1"/>
+      <xs:enumeration id="OP28" value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioTributacaoAutonomaOuEnglobamentoB">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP29" value="3"/>
+      <xs:enumeration id="OP30" value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="RadioIsencaoOuCreditoImposto">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP31" value="5"/>
+      <xs:enumeration id="OP32" value="6"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AlienacaoOuAfetacao">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoBq10TransferenciaOuAlienacao">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="RadioRegimeIsolado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration id="OP33" value="1"/>
+      <xs:enumeration id="OP34" value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- anexo C -->
+  <!-- anexo D -->
+  <xs:simpleType name="Cat_M3V2016_AnexoDq04T01Tipo">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoDq04T01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoDq04T02">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoDq04T03">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoEQ04AT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoEQ04BT01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoEQ04Rendimentos">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoEQ05Quadros">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoFQ04T01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoFQ4NaturezaRendas">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoFQ06T01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoFQ09Quadros">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- anexo G -->
+  <xs:simpleType name="Cat_M3V2016_AnexoGQ04T01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoGQ4BensMoveisImoveis">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoGQ09T01">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoGQ9Codigo">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoGQ10Codigo">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoGQ11Codigo">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:simpleType name="Cat_M3V2016_AnexoGQ14Quadros">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <!-- anexo G1 -->
+  <xs:simpleType name="Cat_M3V2016_AnexoG1Q5Codigo">
+    <xs:restriction base="xs:long"/>
+  </xs:simpleType>
+  <!-- anexo I -->
+</xs:schema>
